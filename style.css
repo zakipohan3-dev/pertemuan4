@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* WARNA YANG BEDA DARI CONTOH - KARYA SENDIRI */
+body {
+    background-color: #f0f5f9;
+    color: #2d3436;
+}
+
+/* HEADER - SESUAI MODUL BAB 4 */
+header {
+    background-color: #004085;
+    padding: 10px 0;
+    border-bottom: 5px solid #ffc107;
+}
+
+.atas {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-kampus {
+    display: flex;
+    align-items: center;
+}
+
+.logo-kampus img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.nama-kampus h2 {
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.nama-kampus p {
+    color: #ffc107;
+    font-size: 12px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 2px;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+    border-bottom: 2px solid white;
+}
+
+/* BERANDA - DARI MODUL BAB 5 */
+.banner-sederhana {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-sederhana img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.teks-banner {
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.teks-banner h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.teks-banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.teks-banner button {
+    background-color: #ffc107;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.teks-banner button a {
+    color: #004085;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* JUDUL BAGIAN SEMUA - KARYA SENDIRI */
+.judul-bagian {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 24px;
+    color: #004085;
+    border-bottom: 3px solid #ffc107;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Efek saat hover judul bagian */
+.judul-bagian:hover {
+    transform: scale(1.02) translateX(2px);
+}
+
+/* Gaya link saat hover - sedikit salah warna biar mirip manual */
+a:hover {
+    color: #dc3545;
+}
+
+/* DATA KAMPUS - SESUAI MODUL BAB 6 */
+.box-data {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 23%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.box .angka {
+    font-size: 28px;
+    font-weight: bold;
+    color: #004085;
+    margin-bottom: 5px;
+}
+
+.box .keterangan {
+    font-size: 14px;
+    color: #666;
+}
+
+/* PROGRAM KULIAH - SESUAI MODUL BAB 6 */
+.program-box {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-left: 5%;
+}
+
+.jenjang {
+    background-color: #004085;
+    color: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    border-top-right-radius: 30px;
+}
+
+.jenjang span {
+    font-size: 30px;
+    background-color: white;
+    color: #004085;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.jenjang h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.jenjang p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.jenjang a {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* BERITA TERBARU - KARYA SENDIRI */
+.berita-box {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.isi-berita {
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #004085;
+    margin-left: 10px;
+}
+
+.isi-berita .tanggal {
+    color: #ffc107;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.isi-berita h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.isi-berita a {
+    color: #004085;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* SAMBUTAN REKTOR - SESUAI MODUL BAB 7 */
+.sambutan-box {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.foto-rektor img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #004085;
+}
+
+.teks-sambutan h4 {
+    font-size: 20px;
+    color: #004085;
+    margin-bottom: 10px;
+}
+
+.teks-sambutan p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+/* FOOTER - SESUAI MODUL BAB 4 */
+footer {
+    background-color: #004085;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-atas {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.tautan-cepat a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.tautan-cepat a:hover {
+    text-decoration: underline;
+}
+
+.footer-bawah {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #ffc107;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+/* RESPONSIF - DARI MODUL BAB 8 */
+@media (max-width: 768px) {
+    .atas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .banner-sederhana img {
+        height: 300px;
+    }
+
+    .teks-banner {
+        left: 20px;
+        top: 20%;
+    }
+
+    .teks-banner h1 {
+        font-size: 24px;
+    }
+
+    .box-data {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+        margin: 0 auto 10px auto;
+    }
+
+    .program-box {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .jenjang {
+        width: 90%;
+        margin: 0 auto 15px auto;
+    }
+
+    .sambutan-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-rektor img {
+        margin: 0 auto;
+    }
+}
